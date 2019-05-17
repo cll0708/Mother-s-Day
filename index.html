@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/rest.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+  <script>
+    ;(function () {
+      let desW = 750;
+
+      function refresRem() {
+        let winW = document.documentElement.clientWidth;
+        if (winW >= desW) {
+          return document.documentElement.style.fontSize = '100px'
+        }
+        let radio = desW / winW;
+        document.documentElement.style.fontSize = 100 / radio + 'px';
+
+      }
+
+      refresRem();
+      window.addEventListener('resize', refresRem);
+      window.addEventListener('pageshow', refresRem)
+    })()
+
+
+  </script>
+  <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+<div id="container">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+<!-- 第一屏     -->
+      <div class="swiper-slide page0">
+        <div class="img1">
+          <img src="./images/page1-2.gif" alt="">
+        </div>
+
+        <img class="img2" src="./images/page1-1.webp" alt="">
+
+        <p class="title">你渐渐长大，她慢慢变老</p>
+      </div>
+<!-- 第二屏     -->
+      <div class="swiper-slide page1">
+        <h3 class="title">
+          <span class="text">1岁 · 蹒跚学步</span>
+        </h3>
+        <div class="desc">
+          <p>她鼓励我向前</p>
+          <p>步履蹒跚地走向她的怀抱</p>
+          <p>那时候，妈妈就是我的整个世界</p>
+        </div>
+        <img class="light"  src="images/page2-3.webp" alt="">
+        <img class="people"  src="images/page2-2.gif" alt="">
+      </div>
+<!-- 第三屏     -->
+      <div class="swiper-slide page1 page2">
+        <h3 class="title">
+        <span class="text">6岁 · 快快长大</span>
+        </h3>
+        <div class="desc">
+          <p>那天生日我许下了</p>
+          <p>一个“快快长大”的愿望</p>
+          <p>也偷偷地许愿妈妈可以永远年轻</p>
+        </div>
+        <img class="light"  src="images/page3-2.webp" alt="">
+        <img class="people"  src="images/page3-1.gif" alt="">
+      </div>
+<!-- 第四屏     -->
+      <div class="swiper-slide page1 page3">
+        <h3 class="title">
+          <span class="text">时光过隙</span>
+        </h3>
+        <div class="desc">
+          <p>时光啊</p>
+          <p>请你慢些吧</p>
+          <p>别让她再变老了</p>
+        </div>
+        <img class="light"  src="images/page4-1.webp" alt="">
+      </div>
+<!-- 第五屏     -->
+      <div class="swiper-slide page4">
+        <p  class="title one">在这个世界上</p>
+        <p  class="title two">你永远亏欠的一个人</p>
+        <p  class="title three">"妈妈"</p>
+        <div class="message">
+          <p>愿天下所有亲情与爱</p>
+          <p>永不迟到</p>
+        </div>
+        <img class="avatar" src="images/me.JPG" alt="">
+      </div>
+
+    </div>
+  </div>
+
+  <div class="music_icon">
+    <audio id="music" loop autoplay style="display: none" src="./images/time.mp3"></audio>
+  </div>
+  <div class="arrow"></div>
+
+</div>
+
+
+<script src="js/swiper.min.js"></script>
+<script src="./js/zepto.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
